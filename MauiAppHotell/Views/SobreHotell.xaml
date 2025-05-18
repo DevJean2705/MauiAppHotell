@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotell.Views.SobreHotell"
+             Title="SobreHotell"
+             NavigationPage.HasNavigationBar="False">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10">
+        
+        <Label Text="Sobre o Hotel"
+               FontFamily="KalamBold"
+               FontSize="50"
+               HorizontalOptions="Center"
+               TextColor="{StaticResource Primary}"/>
+
+        <Label Text="Seja bem-vindo ao Hotel Vivace, onde conforto, elegância e excelência se encontram. Localizado no coração de Guararema, nosso hotel oferece acomodações sofisticadas, serviços impecáveis e uma experiência inesquecível para cada hóspede. Desfrute de quartos modernos, gastronomia refinada e uma equipe sempre pronta para tornar sua estadia especial. Reserve agora e descubra o que torna o Hotel Vivace único!" 
+               FontFamily="Kalam"
+               FontSize="16.5"
+               Margin="10"
+               Padding="5"
+               HorizontalTextAlignment="Center"/>
+
+        <Frame Padding="10"
+               BackgroundColor="{StaticResource Gray600}">
+            <VerticalStackLayout>
+                <Label Text="Desenvolvido por:  Jean Alves"
+                       FontFamily="KalamLight"
+                       FontSize="14"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="End" />
+
+                <Label Text="Ano de Desenvovlimento: 18/05/2025" 
+                       FontFamily="KalamLight"
+                       FontSize="14"
+                       HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+            
+        </Frame>
+
+        <Button Clicked="Button_Clicked"
+                Text="Voltar" 
+                Margin="10"
+                TextColor="White"
+                BackgroundColor="{StaticResource Primary}"
+                WidthRequest="150"/>
+
+    </VerticalStackLayout>
+</ContentPage>
