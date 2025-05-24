@@ -11,7 +11,7 @@ public partial class SobreHotell : ContentPage
     {
 		try
 		{
-			Navigation.PushAsync(new ContratacaoHospedagem());
+			Navigation.PopAsync();
 
 		} catch (Exception ex)
 		{
