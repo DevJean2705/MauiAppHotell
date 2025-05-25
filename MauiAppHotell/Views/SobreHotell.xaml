@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotell.Views.SobreHotell"
              Title="SobreHotell"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource MidnightBlue}">
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10">
@@ -12,25 +13,29 @@
                FontFamily="KalamBold"
                FontSize="50"
                HorizontalOptions="Center"
-               TextColor="{StaticResource Primary}"/>
-
+               TextColor="{StaticResource PrimaryDark}"/>
+        <Frame Margin="10"
+               BackgroundColor="{StaticResource Gray950}">
         <Label Text="Seja bem-vindo ao Hotel Vivace, onde conforto, elegância e excelência se encontram. Localizado no coração de Guararema, nosso hotel oferece acomodações sofisticadas, serviços impecáveis e uma experiência inesquecível para cada hóspede. Desfrute de quartos modernos, gastronomia refinada e uma equipe sempre pronta para tornar sua estadia especial. Reserve agora e descubra o que torna o Hotel Vivace único!" 
                FontFamily="Kalam"
+               TextColor="{StaticResource Secondary}"
                FontSize="16.5"
                Margin="10"
                Padding="5"
                HorizontalTextAlignment="Center"/>
+        </Frame>
 
         <Frame Padding="10"
-               BackgroundColor="{StaticResource Gray600}">
+               BackgroundColor="{StaticResource Gray900}">
             <VerticalStackLayout>
                 <Label Text="Desenvolvido por:  Jean Alves"
-                       FontFamily="KalamLight"
+                       TextColor="{StaticResource Secondary}"
                        FontSize="14"
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="End" />
 
                 <Label Text="Ano de Desenvovlimento: 18/05/2025" 
+                       TextColor="{StaticResource Secondary}"
                        FontFamily="KalamLight"
                        FontSize="14"
                        HorizontalTextAlignment="Center" />
@@ -41,7 +46,7 @@
         <Button Clicked="Button_Clicked"
                 Text="Voltar" 
                 Margin="10"
-                TextColor="White"
+                TextColor="{StaticResource Secondary}"
                 BackgroundColor="{StaticResource Primary}"
                 WidthRequest="150"/>
 

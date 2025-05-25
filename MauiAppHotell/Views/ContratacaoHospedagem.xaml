@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotell.Views.ContratacaoHospedagem"
              Title="ContratacaoHospedagem"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource MidnightBlue}">
     
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10">
@@ -11,9 +12,10 @@
         <Label Text="Cálculo da Diária"
                FontFamily="Kalam"
                FontSize="50"
-               TextColor="{StaticResource Primary}"/>
+               TextColor="{StaticResource PrimaryDark}"/>
 
-        <Frame Padding="10">
+        <Frame Padding="10"
+               BackgroundColor="{StaticResource Gray950}">
             <VerticalStackLayout>
                 <Grid RowDefinitions="Auto, Auto"
                       ColumnDefinitions="*, *, 2*">
@@ -55,7 +57,8 @@
                         ItemDisplayBinding="{Binding Descricao}"/>
 
                 <Frame Padding="10"
-                       Margin="10">
+                       Margin="10"
+                       BackgroundColor="{StaticResource Gray950}">
                     <VerticalStackLayout>
                         <Label Text="Período da Estadia" />
                         
@@ -76,12 +79,14 @@
 
                 <Button Clicked="Button_Clicked"
                         Text="Avançar" 
-                        TextColor="White"
+                        FontFamily="KalamBold"
+                        TextColor="{StaticResource Secondary}"
                         BackgroundColor="{StaticResource Primary}"/>
 
                 <Button Clicked="Button_Clicked_1"
                         Text="Sobre o Hotel" 
-                        TextColor="White"
+                        FontFamily="KalamBold"
+                        TextColor="{StaticResource Secondary}"
                         BackgroundColor="{StaticResource Primary}"
                         Margin="10"
                         WidthRequest="150" />

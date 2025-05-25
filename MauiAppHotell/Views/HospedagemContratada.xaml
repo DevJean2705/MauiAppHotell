@@ -3,17 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotell.Views.HospedagemContratada"
              Title="HospedagemContratada"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource MidnightBlue}">
             
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
         
         <Label Text="Suíte de Luxo" 
-               TextColor="{StaticResource Primary}"
+               TextColor="{StaticResource PrimaryDark}"
                FontFamily="Kalam"
                FontSize="50"
                HorizontalTextAlignment="Center"/>
 
-        <Frame Margin="10">
+        <Frame Margin="10"
+               BackgroundColor="{StaticResource Gray950}">
             <HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Label Text="Adultos: " />
@@ -27,7 +29,8 @@
             </HorizontalStackLayout>
         </Frame>
 
-        <Frame Margin="10">
+        <Frame Margin="10"
+               BackgroundColor="{StaticResource Gray950}">
             <Grid ColumnDefinitions="*, *, *"
                   RowDefinitions="Auto, Auto">
                 <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" />
@@ -40,7 +43,8 @@
             </Grid>
         </Frame>
 
-        <Frame Margin="10">
+        <Frame Margin="10"
+               BackgroundColor="{StaticResource Gray950}">
             <HorizontalStackLayout>
                 <Label Text="Valor Total: " />
                 <Label Text="R$ 750,00 " />
@@ -49,7 +53,8 @@
 
         <Button Text="Voltar" 
                 Clicked="Button_Clicked" 
-                TextColor="White"
+                FontFamily="KalamBold"
+                TextColor="{StaticResource Secondary}"
                 BackgroundColor="{StaticResource Primary}"
                 HorizontalOptions="Center" />
 
